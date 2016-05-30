@@ -1,0 +1,19 @@
+在JS中遍历数组时通常会用到JSTL标签库<c:ForEach>标签，要获得循环变量的长度，可以使用jstl标签的functions的length属性可以得到要
+迭代集合的长度。
+fn:length()函数返回字符串长度或集合中元素的数量。
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<html>
+<head>
+<title>Using JSTL Functions</title>
+</head>
+<body>
+
+<c:set var="string1" value="This is first String."/>
+<c:set var="string2" value="This is second String." />
+
+<p>Length of String (1) : ${fn:length(string1)}</p>
+<p>Length of String (2) : ${fn:length(string2)}</p>
+
+</body>
+</html>
