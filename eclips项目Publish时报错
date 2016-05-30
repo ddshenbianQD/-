@@ -1,0 +1,1 @@
+新的机器在运行项目时可能会在publish时出错，此时可以选中web-base,右键选择maven-> update project
