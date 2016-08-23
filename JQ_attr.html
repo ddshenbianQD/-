@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		
+	</div>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+	$(function(){
+	/*
+	jquery 设置属性时会默认把属性名转为小写
+	*/
+		$("div").attr("FFF","ccc");
+		$("div").attr("FFF"); //undefined
+		$("div").attr("FFF"); //ccc
+	})
+</script>
+</body>
+</html>
